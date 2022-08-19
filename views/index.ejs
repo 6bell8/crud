@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/layout.css" />
+    <link rel="stylesheet" href="/css/splitting.css" />
+
+    <script src="/js/greensock/gsap.min.js"></script>
+    <script src="/js/jquery-3.6.0.min.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <header id="header">반갑습니다.</header>
+    <div class="writeTitle">
+      <a href="/write">글쓰기</a>
+      <a href="/list">목록</a>
+    </div>
+  </body>
+  <script>
+    Splitting();
+
+    gsap.to("#header", { y: 100, opacity: 0, delay: 0.5, duration: 1, ease: "power4.out" });
+  </script>
+</html>
